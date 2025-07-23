@@ -1,6 +1,3 @@
-variable "region" 
-{
-    defualt = "us-east-1"
+variable "region" {
+    default = "ap-south-1"
 }
-
-
