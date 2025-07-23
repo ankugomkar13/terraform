@@ -1,9 +1,9 @@
-resource "aws_s3_bucket" "s3bucket" {
-    bucket = "ankita-myfile-bucket-xyz"
+resource "aws_s3_bucket" "my_bucket" {
+    bucket = var.bucket_name
     acl    = "private"
  
     tags = {
-        Name        = "bucketterra"
+        Name        = var.bucket_name
         Environment = "Dev"
     }
 }
